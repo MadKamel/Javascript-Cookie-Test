@@ -37,14 +37,17 @@ function btn_toggle_lang() {
 			set_language("de");
 			break;
 	}
-	location.reload()
+	location.reload();
 }
 
 //set_language("en");
 
 langswap("LANG.what_is_your_language", "あなたの言語は何ですか?", "was ist ihre sprache?");
-langswap("LANG.not_this_one", "このはありません", "nicht das!");
+langswap("LANG.not_this_one", "このはありません!", "nicht das!");
 
 
-
+if(x=="") {
+	set_language("en");
+	location.reload();
+}
 //alert(x);
