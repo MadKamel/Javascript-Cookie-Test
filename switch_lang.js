@@ -42,10 +42,14 @@ function btn_toggle_lang() {
 
 //set_language("en");
 
+// This should replace parts of the site with their translations.
 langswap("LANG.what_is_your_language", "あなたの言語は何ですか?", "was ist ihre sprache?");
 langswap("LANG.not_this_one", "このはありません!", "nicht das!");
+langswap("LANG.lang_code", "japanese (JP)", "german (DE)");
 
 
+
+// This should make it so that the website will automatically load English as a language.
 if(x=="") {
 	set_language("en");
 	location.reload();
