@@ -1,5 +1,7 @@
 let x = document.cookie;
 
+document.getElementById("COOKIE.data").innerHTML = document.cookie
+
 // Swap language from English to Japanese or German. That is, the actual text on the page.
 function langswap(id, lang_jp, lang_de){
 	switch(x) {
@@ -22,6 +24,8 @@ function langswap(id, lang_jp, lang_de){
 function set_language(lang_code) {
 	document.cookie = "lang=" + lang_code + "; expires=Thu, 18 Dec 2023 12:00:00 UTC";
 	x = document.cookie;
+	// update cookie section.
+	document.getElementById("COOKIE.data").innerHTML = document.cookie
 }
 
 // Button function. From DE to JP, JP to EN, and finally EN to DE. After switched, refresh.
