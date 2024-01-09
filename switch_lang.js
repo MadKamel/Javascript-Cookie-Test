@@ -22,7 +22,7 @@ function langswap(id, lang_jp, lang_de){
 
 // Explicitly set the language cookie.
 function set_language(lang_code) {
-	document.cookie = "lang=" + lang_code + "; expires=Thu, 18 Dec 2023 12:00:00 UTC";
+	document.cookie = "lang=" + lang_code + "; expires=Thu, 24 Dec 2024 5:06:00 UTC";
 	x = document.cookie;
 	// update cookie section.
 	document.getElementById("COOKIE.data").innerHTML = document.cookie
